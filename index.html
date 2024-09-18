@@ -3,9 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>audio-player</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <audio src="assets/audio/avenged_sevenfold_-_bat_country.mp3" class="audio"></audio>
+    <main class="container">
+        <div class="player">
+            <div class="screen">
+                <div class="img__wrapper">
+                    <img src="assets/img/City_of_Evil_album_cover.jpg" alt="cover" class="img">
+                </div>
+                <div class="title__wrapper">
+                    <p class="title">Avenged sevenfold - Bat country</p>
+                    <div class="progress-bar__wrapper">
+                        <p class="duration-time">05:13</p>
+                        <input class="progress-bar" type="range">
+                        <p class="current-time">00:00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="lower-block">
+                <div class="row1">
+                    <img src="assets/svg/minus.svg" width="30" height="30" class="button minus">
+                    <img src="assets/svg/plus.svg" width="30" height="30" class="button plus">  
+                </div>
+                <div class="row2">
+                    <img src="assets/svg/backward.png" width="40" height="40" class="button backward">
+                    <img src="assets/svg/play.png" width="40" height="40" class="button play">
+                    <img src="assets/svg/pause.png" width="40" height="40" class="hidden button pause">
+                    <img src="assets/svg/forward.png" width="40" height="40" class="button forward">
+                </div>
+                <div class="row3">
+                    <img src="assets/svg/replay.svg" width="30" height="30" class="button replay">        
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>2024 <a class="github-link" href="https://github.com/UsaAnton" target="_blank">UsaAnton</a>
+        </p>
+        <a class="rs-link" href="https://rs.school/courses/javascript-preschool-ru" target="_blank"><img src="assets/svg/rs-school-logo.svg"
+                alt="logo"></a>
+    </footer>
+    <script src="scrypt.js"></script>
 </body>
 </html>
